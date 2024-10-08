@@ -1,0 +1,24 @@
+<section>
+    <div id="cart-items" class="cart-items-container"></div>
+    <div id="cart-empty-placeholder" class="cart-empty-placeholder">
+        <div id="cart-empty-placeholder-icon"></div>
+        <h3>Keranjang pesananmu kosong</h3>
+        <p>Ini waktunya memesan yang enak enak!</p>
+    </div>
+
+    <template id="cart-item-template">
+        <div class="cart-item-container">
+            <img id="cart-item-image" class="cart-item-image"/>
+            <div class="cart-item-info-container">
+                <h6 id="cart-item-name" class="cart-item-name"></h6>
+                <p id="cart-item-description" class="small cart-item-description">Small</p>
+                <div id="cart-item-cost" class="cart-item-cost">$2.00</div>
+            </div>
+            <div class="cart-item-quantity-container">
+                <button id="cart-item-quantity-decrement" class="material-symbols-rounded icon-button small">remove</button>
+                <div id="cart-item-quantity" class="cart-item-quantity">1</div>
+                <button id="cart-item-quantity-increment" class="material-symbols-rounded icon-button small">add</button>
+            </div>
+        </div>
+    </template>
+</section>

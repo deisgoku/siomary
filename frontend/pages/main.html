@@ -1,0 +1,82 @@
+<section>
+    <div class="cafe-logo-container">
+        <img id="cafe-logo" class="cafe-logo shimmer" src="icons/icon-transparent.svg"/>
+    </div>  
+    <img id="cafe-cover" class="cover shimmer" src="icons/icon-transparent.svg"/>
+    <div id="cafe-info" class="cafe-info-container">
+        <h1 id="cafe-name" class="shimmer"></h1>
+        <p id="cafe-kitchen-categories" class="cafe-kitchen-categories shimmer"></p>
+        <div class="cafe-parameters-container shimmer"></div>
+    </div>
+    <div class="cafe-section-container">
+        <h3 id="cafe-section-categories-title" class="cafe-section-title shimmer">Categories</h3>
+        <div id="cafe-categories" class="cafe-section-horizontal">
+            <div class="cafe-category-container shimmer"></div>
+            <div class="cafe-category-container shimmer"></div>
+            <div class="cafe-category-container shimmer"></div>
+            <div class="cafe-category-container shimmer"></div>
+            <div class="cafe-category-container shimmer"></div>
+        </div>
+    </div>
+    <div class="cafe-section-container">
+        <h3 id="cafe-section-popular-title" class="cafe-section-title shimmer">Popular</h3>
+        <div id="cafe-section-popular" class="cafe-section-horizontal">
+            <div class="cafe-item-container">
+                <img id="cafe-item-image" class="cafe-item-image shimmer" src="icons/icon-transparent.svg"></img>
+                <h6 id="cafe-item-name" class="cafe-item-name shimmer"></h6>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 90%;"></p>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 100%;"></p>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 75%;"></p>
+            </div>
+            <div class="cafe-item-container">
+                <img id="cafe-item-image" class="cafe-item-image shimmer" src="icons/icon-transparent.svg"></img>
+                <h6 id="cafe-item-name" class="cafe-item-name shimmer"></h6>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 90%;"></p>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 100%;"></p>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 75%;"></p>
+            </div>
+            <div class="cafe-item-container">
+                <img id="cafe-item-image" class="cafe-item-image shimmer" src="icons/icon-transparent.svg"></img>
+                <h6 id="cafe-item-name" class="cafe-item-name shimmer"></h6>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 90%;"></p>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 100%;"></p>
+                <p id="cafe-item-description" class="small cafe-item-description shimmer" style="min-width: 75%;"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <template id="cafe-info-template">
+        <div>
+            <h1 id="cafe-name"></h1>
+            <p id="cafe-kitchen-categories" class="cafe-kitchen-categories"></p>
+            <div class="cafe-parameters-container">
+                <div class="cafe-parameter-container">
+                    <img src="icons/icon-star.svg" class="cafe-parameter-icon"/>
+                    <div id="cafe-rating" class="cafe-parameter-value"></div>
+                </div>
+                <div class="cafe-parameter-container">
+                    <img src="icons/icon-time.svg" class="cafe-parameter-icon"/>
+                    <div id="cafe-cooking-time" class="cafe-parameter-value"></div>
+                </div>
+                <div id="cafe-status" class="cafe-status"></div>
+            </div>
+        </div>  
+    </template>
+
+    <template id="cafe-category-template">
+        <div class="cafe-category-container">
+            <img id="cafe-category-icon" class="cafe-category-icon"/>
+            <div id="cafe-category-name" class="cafe-category-name"></div>
+        </div>
+    </template>
+
+    <template id="cafe-item-template">
+        <div class="cafe-item-container">
+            <img id="cafe-item-image" class="cafe-item-image"/>
+            <h6 id="cafe-item-name" class="cafe-item-name"></h6>
+            <p id="cafe-item-description" class="small cafe-item-description"></p>
+        </div>
+    </template>
+</section>
