@@ -1,0 +1,32 @@
+[
+    {
+        "id": "burgers",
+        "icon": "icons/icon-burger.svg",
+        "name": "Burgers",
+        "backgroundColor": "#F79683"
+    },
+    {
+        "id": "pizza",
+        "icon": "icons/icon-pizza.svg",
+        "name": "Pizza",
+        "backgroundColor": "#F5DEB3"
+    },
+    {
+        "id": "pasta",
+        "icon": "icons/icon-pasta.svg",
+        "name": "Pasta",
+        "backgroundColor": "#8FBC8F"
+    },
+    {
+        "id": "ice-cream",
+        "icon": "icons/icon-icecream.svg",
+        "name": "Ice Cream",
+        "backgroundColor": "#E6E6FA"
+    },
+    {
+        "id": "coffee",
+        "icon": "icons/icon-coffee.svg",
+        "name": "Coffee",
+        "backgroundColor": "#D2B48C"
+    }
+]
