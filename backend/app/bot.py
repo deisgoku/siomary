@@ -8,7 +8,7 @@ from telebot.util import quick_markup
 
 BOT_TOKEN=os.getenv('8015047999:AAEZY8fY6XOeGIYCzXA2LFep072I0kZ_XDY')
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
-WEBHOOK_URL=os.getenv('https://vercel.live/link/siomary.vercel.app?via=project-dashboard-alias-list&p=1')
+WEBHOOK_URL=os.getenv('https://api.vercel.com/v1/integrations/deploy/prj_3FGMETOUFbmnmOtcv75wDRHDAAiX/jdNv0BQ9yF')
 WEBHOOK_PATH='/bot'
 APP_URL=os.getenv('https://vercel.live/link/siomary.vercel.app?via=project-dashboard-alias-list&p=1')
 
