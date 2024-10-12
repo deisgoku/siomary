@@ -10,7 +10,7 @@ BOT_TOKEN=os.getenv('BOT_TOKEN')
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
 WEBHOOK_URL=os.getenv('https://api.vercel.com/v1/integrations/deploy/prj_3FGMETOUFbmnmOtcv75wDRHDAAiX/jdNv0BQ9yF')
 WEBHOOK_PATH='/bot'
-APP_URL=os.getenv('https://vercel.live/link/siomary.vercel.app?via=project-dashboard-alias-list&p=1')
+APP_URL=os.getenv('https://siomary-backend.vercel.app/')
 
 bot = TeleBot(BOT_TOKEN, parse_mode=None)
 
