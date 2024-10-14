@@ -9,11 +9,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN=os.getenv('015047999:66df30730c7832e30bcd3a73a90ae8eb') #API_KEY
+BOT_TOKEN=os.getenv('BOT_TOKEN') #API_KEY
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
 WEBHOOK_URL=os.getenv('WEBHOOK_URL')
 WEBHOOK_PATH='/bot'
-APP_URL=os.getenv('https://siomary.vercel.app')
+APP_URL=os.getenv('APP_URL)
 
 bot = TeleBot(BOT_TOKEN, parse_mode=None)
 
