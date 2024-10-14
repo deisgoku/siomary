@@ -9,11 +9,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN=os.getenv('BOT_TOKEN') #API_KEY
+BOT_TOKEN=os.getenv('BOT_TOKEN') #bot_token from Botfather
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
 WEBHOOK_URL=os.getenv('WEBHOOK_URL')
 WEBHOOK_PATH='/bot'
-APP_URL=os.getenv('APP_URL)
+APP_URL=os.getenv('APP_URL')
 
 bot = TeleBot(BOT_TOKEN, parse_mode=None)
 
@@ -134,7 +134,7 @@ def create_invoice_link(prices) -> str:
         description='Great choice! Last steps and we will get to cooking ;)',
         payload='orderID',
         provider_token=PAYMENT_PROVIDER_TOKEN,
-        currency='USD',
+        currency='IDR',
         prices=prices,
         need_name=True,
         need_phone_number=True,
