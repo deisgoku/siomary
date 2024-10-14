@@ -1,6 +1,6 @@
 // Set base URL depending on your environment.
 // Don't forget to add it to allowed origins on backend.
-const baseUrl = 'https://backendtest-deisgoku-deis-projects-a7741958.vercel.app/';
+const baseUrl = 'http://localhost:3001';
 
 /**
  * Performs GET request.
