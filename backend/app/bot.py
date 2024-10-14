@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN=os.getenv('BOT_TOKEN') #API_KEY
+BOT_TOKEN=os.getenv('8015047999:AAEAVbOWsGuJwD_ZUISqfCyJOnxDwo61LRs') #API_KEY
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
 WEBHOOK_URL=os.getenv('WEBHOOK_URL')
 WEBHOOK_PATH='/bot'
