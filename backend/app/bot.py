@@ -5,8 +5,11 @@ import telebot
 from telebot import TeleBot
 from telebot.types import Update, WebAppInfo, Message
 from telebot.util import quick_markup
+from dotenv import load_dotenv
 
-BOT_TOKEN=os.getenv('BOT_TOKEN')
+load_dotenv()
+
+BOT_TOKEN=os.getenv('BOT_TOKEN') #API_KEY
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
 WEBHOOK_URL=os.getenv('WEBHOOK_URL')
 WEBHOOK_PATH='/bot'
