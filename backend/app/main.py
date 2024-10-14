@@ -31,6 +31,12 @@ if os.getenv('DEV_MODE') is not None:
 CORS(app, origins=list(filter(lambda o: o is not None, allowed_origins)))
 
 
+@app.route('/')
+def home():
+   return render_template('index.html')
+
+
+
 
 @app.route(bot.WEBHOOK_PATH, methods=['POST'])
 def bot_webhook():
