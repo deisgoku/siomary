@@ -14,7 +14,7 @@ load_dotenv()
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../frontend', static_url_path='')
 # Handle paths like '/info/' and '/info' as the same.
 app.url_map.strict_slashes = False
 
@@ -28,13 +28,6 @@ if os.getenv('DEV_MODE') is not None:
     bot.enable_debug_logging()
         
 CORS(app, origins=list(filter(lambda o: o is not None, allowed_origins)))
-
-
-@app.route('/')
-def home():
-   return render_template('index.html')
-
-
 
 
 @app.route(bot.WEBHOOK_PATH, methods=['POST'])
@@ -185,6 +178,10 @@ def json_data(data_file_path: str):
 @app.route('/')
 def serve_frontend():
     return send_from_directory('../frontend', 'index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+   return send_from_directory('app.static_folder, path')
 
 
 bot.refresh_webhook()
