@@ -2,7 +2,7 @@ import json
 import os
 from . import auth, bot
 from dotenv import load_dotenv
-from flask import Flask, request
+from flask import Flask, request ,send_from_directory
 from flask_cors import CORS
 from telebot.types import LabeledPrice
 
@@ -182,6 +182,10 @@ def json_data(data_file_path: str):
     else:
         raise FileNotFoundError()
     
+# Endpoint untuk menyajikan halaman depan
+@app.route('/')
+def serve_frontend():
+    return send_from_directory('../frontend', 'index.html')
 
 
 bot.refresh_webhook()
