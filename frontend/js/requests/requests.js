@@ -1,6 +1,6 @@
 // Set base URL depending on your environment.
 // Don't forget to add it to allowed origins on backend.
-const baseUrl = 'https://siomary.vercel.app';
+const baseUrl = 'https://tes2ap.vercel.app';
 
 /**
  * Performs GET request.
