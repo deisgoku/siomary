@@ -1,6 +1,6 @@
 // Set base URL depending on your environment.
 // Don't forget to add it to allowed origins on backend.
-const baseUrl = 'http://localhost:3001';
+const baseUrl = 'https://siomarybackend.vercel.app';
 
 /**
  * Performs GET request.
