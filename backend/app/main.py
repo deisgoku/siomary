@@ -2,7 +2,7 @@ import json
 import os
 from . import auth, bot
 from dotenv import load_dotenv
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_cors import CORS
 from telebot.types import LabeledPrice
 
@@ -14,7 +14,7 @@ load_dotenv()
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../frontend',static_url_path='')
 # Handle paths like '/info/' and '/info' as the same.
 app.url_map.strict_slashes = False
 
@@ -44,8 +44,7 @@ def bot_webhook():
 def main():
     """test connect.
     """
-    bot.process_update(request.get_json())
-    return info()
+    return render_template('index.html')
         
 @app.route('/info')
 def info():
