@@ -80,7 +80,7 @@ def handle_start_command(message):
     """
     send_actionable_message(
         chat_id=message.chat.id,
-        text='*Welcome to Siomary CAFE* 🌿\n\n Ini waktunya memesan sesuatu yang enak 😋 Tekan tombol dibawah untuk memulai.'
+        text='*Welcome to Siomary CAFE* ,,,,,,,☺️\n\n Ini waktunya memesan sesuatu yang enak 😋 Tekan tombol dibawah untuk memulai.'
     )
 
 @bot.message_handler()
@@ -134,7 +134,7 @@ def create_invoice_link(prices) -> str:
         description='Great choice! Last steps and we will get to cooking ;)',
         payload='orderID',
         provider_token=PAYMENT_PROVIDER_TOKEN,
-        currency='IDR',
+        currency='USD',
         prices=prices,
         need_name=True,
         need_phone_number=True,
