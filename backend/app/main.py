@@ -14,7 +14,7 @@ load_dotenv()
 
 
 
-app = Flask(__name__, static_folder='../frontend',static_url_path='/frontend')
+app = Flask(__name__)
 # Handle paths like '/info/' and '/info' as the same.
 app.url_map.strict_slashes = False
 
@@ -44,7 +44,8 @@ def bot_webhook():
 def main():
     """test connect.
     """
-    return render_template('index.html')
+    info()
+    return { 'message': 'OK' }
         
 @app.route('/info')
 def info():
