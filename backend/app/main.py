@@ -21,11 +21,11 @@ app.url_map.strict_slashes = False
 # List of allowed origins. The production 'APP_URL' is added by default,
 # the development `DEV_APP_URL` is added if it and `DEV_MODE` variable is present.
 #allowed_origins = [os.getenv('APP_URL')]
-allowed_origins = [os.getenv('https://siomary.vercel.app/?dest=root')]
+allowed_origins = [os.getenv('APP_URL')]
 
 if os.getenv('DEV_MODE') is not None:
  #   allowed_origins.append(os.getenv('DEV_APP_URL'))
-    allowed_origins.append(os.getenv('https://vercel.com/deis-projects-a7741958/siomary/56CrEaZbvfrBppsz5CBGRgDDUDhy'))
+    allowed_origins.append(os.getenv('DEV_APP_URL'))
     bot.enable_debug_logging()
         
 CORS(app, origins=list(filter(lambda o: o is not None, allowed_origins)))
