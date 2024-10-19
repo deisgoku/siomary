@@ -8,9 +8,9 @@ from telebot.util import quick_markup
 
 BOT_TOKEN=os.getenv('BOT_TOKEN')
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
-WEBHOOK_URL=os.getenv('https://api.vercel.com/v1/integrations/deploy/prj_3FGMETOUFbmnmOtcv75wDRHDAAiX/jdNv0BQ9yF')
+WEBHOOK_URL=os.getenv('WEBHOOK_URL')
 WEBHOOK_PATH='/bot'
-APP_URL=os.getenv('https://vercel.live/link/siomary.vercel.app?via=project-dashboard-alias-list&p=1')
+APP_URL=os.getenv('APP_URL')
 
 bot = TeleBot(BOT_TOKEN, parse_mode=None)
 
@@ -131,7 +131,7 @@ def create_invoice_link(prices) -> str:
         description='Great choice! Last steps and we will get to cooking ;)',
         payload='orderID',
         provider_token=PAYMENT_PROVIDER_TOKEN,
-        currency='USD',
+        currency='IDR',
         prices=prices,
         need_name=True,
         need_phone_number=True,
