@@ -44,8 +44,7 @@ def bot_webhook():
 def main():
     """test connect.
     """
-    
-    return app()
+    return
         
 @app.route('/info')
 def info():
