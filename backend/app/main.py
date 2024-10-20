@@ -44,7 +44,10 @@ def bot_webhook():
 def main():
     """test connect.
     """
-    bot.refresh_webhook()
+    send_actionable_message(
+        chat_id=message.chat.id,
+        text='*Welcome to Siomary CAFE* 🏚 \n\n Ini waktunya memesan sesuatu yang enak enak 😋 \n\n Tekan tombol dibawah untuk memulai.'
+    )
     return { 'message': 'OK' }
         
 @app.route('/info')
