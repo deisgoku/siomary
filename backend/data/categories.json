@@ -1,8 +1,8 @@
 [
     {
-        "id": "burgers",
-        "icon": "icons/icon-burger.svg",
-        "name": "Burgers",
+        "id": "siomay",
+        "icon": "icons/siomay-icon.svg",
+        "name": "Siomay",
         "backgroundColor": "#F79683"
     },
     {
