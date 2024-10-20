@@ -9,14 +9,14 @@
                 "id": "b",
                 "name": "Biasa",
                 "cost": "62500",
-                "weight": "50 pcs"
+                "weight": "50 pcs + Bumbu Kemasan Botol"
 
             },
             {
                 "id": "t",
                 "name": "Tenggiri",
                 "cost": "80000",
-                "weight": "80000"
+                "weight": "50 Pcs + Bumbu kemasan botol"
             }
         ]
     },
