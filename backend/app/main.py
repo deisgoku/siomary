@@ -44,8 +44,8 @@ def bot_webhook():
 def main():
     """test connect.
     """
-    bot.process_update(request.get_json())
-    return { 'message': 'OK' }
+    
+    return app()
         
 @app.route('/info')
 def info():
