@@ -94,7 +94,7 @@ def send_invoice(message):
     invoice_url = invoice.get("invoice_url")
 
     if invoice_url:
-        send_actionable_message(
+        bot.send_message(
             chat_id=message.chat.id,
             text=f'Ini adalah link pembayaran menggunakan DANA , Silahkan lakukan pmebayran melalui link di bawah ini: [Bayar Sekarang]({invoice_url})',
             parse_mode='markdown'
