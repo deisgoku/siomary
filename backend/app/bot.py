@@ -9,6 +9,7 @@ from telebot.util import quick_markup
 
 BOT_TOKEN=os.getenv('BOT_TOKEN')
 PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
+PAYMENT_PROVIDER_URL=os.getenv('PAYMENT_PROVIDER_URL')
 WEBHOOK_URL=os.getenv('WEBHOOK_URL')
 WEBHOOK_PATH='/bot'
 APP_URL=os.getenv('APP_URL')
@@ -181,7 +182,7 @@ def create_invoice(amount, external_id, payer_email):
         }
     }
 
-    response = requests.post('https://api.xendit.co/v2/invoices', json=data, headers=headers)
+    response = requests.post('PAYMENT_PROVIDER_URL', json=data, headers=headers)
     return response.json()
 """
 @bot.message_handler(func=lambda message: re.match(r'/?invoice', message.text, re.IGNORECASE) is not None)
