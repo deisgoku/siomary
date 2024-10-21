@@ -20,7 +20,7 @@ app.url_map.strict_slashes = False
 
 # List of allowed origins. The production 'APP_URL' is added by default,
 # the development `DEV_APP_URL` is added if it and `DEV_MODE` variable is present.
-#allowed_origins = [os.getenv('APP_URL')]
+allowed_origins = [os.getenv('PAYMENT_PROVIDER_URL')]
 allowed_origins = [os.getenv('APP_URL')]
 
 if os.getenv('DEV_MODE') is not None:
