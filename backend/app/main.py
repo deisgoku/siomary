@@ -161,6 +161,9 @@ def create_order():
     invoice_url = bot.create_invoice_link(
         prices=labeled_prices
     )
+    invoice_url = send_invoice(message,
+        amount=labeled_prices
+    )
 
     return { 'invoiceUrl': invoice_url }
 
