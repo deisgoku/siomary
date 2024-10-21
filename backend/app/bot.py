@@ -92,12 +92,18 @@ def send_invoice(message):
 
     invoice = create_invoice(amount, external_id, payer_email)
     invoice_url = invoice.get("invoice_url")
+    markup = quick_markup({
+        'klik untuk membayar': { 
+            'web_app': WebAppInfo({invoice_url})
+        },
+    }, row_width=1)
 
     if invoice_url:
         bot.send_message(
             chat_id=message.chat.id,
-            text=f'Ini adalah link pembayaran menggunakan DANA , Silahkan lakukan pmebayran melalui link di bawah ini: [Bayar Sekarang]({invoice_url})',
-            parse_mode='markdown'
+            text=f'Ini adalah link pembayaran menggunakan DANA , Silahkan lakukan pmebayran melalui link di bawah ini:',
+            parse_mode='markdown',
+            reply_markup=markup
         )
     else:
         bot.send_message(
