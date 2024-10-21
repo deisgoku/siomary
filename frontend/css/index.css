@@ -172,7 +172,7 @@ p.small {
         0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
         0 3.5px 6px hsla(230, 13%, 9%, 0.09);
     padding: 24px;
-    animation: neon-glow 8s infinite alternate, linear infinite;
+    animation: neon-glow 0.2s infinite alternate, linear infinite;
 }
 
 .cafe-kitchen-categories {
@@ -546,7 +546,7 @@ p.small {
 
 /* Common (animation effect clock icon) */
 .clock-icon {
-    animation: spin 60s linear infinite;
+    animation: spin 0.3s linear infinite;
     animation-name: clock-icon;
     transform-origin: center; /* Agar berputar di tengah */
 }
@@ -554,7 +554,7 @@ p.small {
 .hour-hand {
     transform-origin: 50% 50%;
     animation-name: hour-hand;
-    animation: rotate 60s linear infinite;
+    animation: rotate 0.3s linear infinite;
 }
 
 @keyframes rotate {
