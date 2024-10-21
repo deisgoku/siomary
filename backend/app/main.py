@@ -161,10 +161,6 @@ def create_order():
     invoice_url = bot.create_invoice_link(
         prices=labeled_prices
     )
-    invoice_url = bot.send_invoice(
-        amount=labeled_prices
-    )
-
     return { 'invoiceUrl': invoice_url }
 
 def json_data(data_file_path: str):
