@@ -1,6 +1,7 @@
 import logging
 import os
 import re
+import requests
 import telebot
 from telebot import TeleBot
 from telebot.types import Update, WebAppInfo, Message
@@ -11,6 +12,7 @@ PAYMENT_PROVIDER_TOKEN=os.getenv('PAYMENT_PROVIDER_TOKEN')
 WEBHOOK_URL=os.getenv('WEBHOOK_URL')
 WEBHOOK_PATH='/bot'
 APP_URL=os.getenv('APP_URL')
+XENDIT_SECRET_KEY = os.getenv('XENDIT_SECRET_KEY')
 
 bot = TeleBot(BOT_TOKEN, parse_mode=None)
 
@@ -131,12 +133,55 @@ def create_invoice_link(prices) -> str:
         description='Pilihan mantap  👌sekarang waktunya pembayaran 🧭abang nyiapin makanan ',
         payload='orderID',
         provider_token=PAYMENT_PROVIDER_TOKEN,
-        currency='IDR',
+        currency='USD',
         prices=prices,
         need_name=True,
         need_phone_number=True,
         need_shipping_address=True
     )
+
+def create_invoice(amount, external_id, payer_email):
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {XENDIT_SECRET_KEY}',
+    }
+
+    data = {
+        'external_id': external_id,
+        'amount': amount,
+        'payer_email': payer_email,
+        'description': 'Test pembayran mengunakan DANA',
+        'success_redirect_url': 'https://your-success-url.com',
+        'failure_redirect_url': 'https://your-failure-url.com',
+        'ewallet': {
+            'type': 'DANA'
+        }
+    }
+
+    response = requests.post('https://api.xendit.co/v2/invoices', json=data, headers=headers)
+    return response.json()
+
+@bot.message_handler(commands=['invoice'])
+def send_invoice(message, amount):
+    amount = amount  # Jumlah dalam IDR
+    external_id = f'invoice-{message.chat.id}'
+    payer_email = 'test@example.com'  # Atur sesuai data pengguna yang real
+
+    invoice = create_invoice(amount, external_id, payer_email)
+    invoice_url = invoice.get("invoice_url")
+
+    if invoice_url:
+        bot.send_message(
+            chat_id=message.chat.id,
+            text=f'Ini adalah link pembayaran menggunakan DANA , Silahkan lakukan pmebayran melalui link di bawah ini: [Bayar Sekarang]({invoice_url})',
+            parse_mode='markdown'
+        )
+    else:
+        bot.send_message(
+            chat_id=message.chat.id,
+            text='Gagal membuat invoice pembayaran, silahkan coba lagi .',
+        )
+
 
 def enable_debug_logging():
     """Display all logs from the Bot. May be useful while developing."""
