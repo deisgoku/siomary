@@ -172,6 +172,7 @@ p.small {
         0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
         0 3.5px 6px hsla(230, 13%, 9%, 0.09);
     padding: 24px;
+    animation: neon-glow 1.5s infinite alternate, spin 8s linear infinite;
 }
 
 .cafe-kitchen-categories {
@@ -571,6 +572,15 @@ p.small {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(0, 255, 0, 0.8), 0 0 15px rgba(0, 0, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(0, 255, 0, 1), 0 0 40px rgba(0, 0, 255, 1);
     }
 }
 
