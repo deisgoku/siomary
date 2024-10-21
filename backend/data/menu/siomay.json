@@ -21,21 +21,21 @@
         ]
     },
     {
-        "id": "burger-2",
-        "image": "https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Jalapeno & Habanero burger",
+        "id": "siomay-2",
+        "image": "https://i.im.ge/2024/10/20/kENGEy.images.jpeg",
+        "name": "Siomay Kobis Ikan Tenggiri",
         "description": "From aged beef, with slices of jalapeño and habanero peppers, Cheddar cheese, homemade guacamole, arugula, romaine lettuce, spicy tomato salsa and grilled corn.",
         "variants": [
             {
                 "id": "s",
                 "name": "Small",
-                "cost": "1249",
+                "cost": "2000",
                 "weight": "210g"
             },
             {
                 "id": "l",
                 "name": "Large",
-                "cost": "1560",
+                "cost": "5000",
                 "weight": "320g"
             }
         ]
