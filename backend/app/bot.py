@@ -85,7 +85,7 @@ def handle_start_command(message):
 
 @bot.message_handler(func=lambda message: re.match(r'/?invoice', message.text, re.IGNORECASE) is not None)
 def send_invoice(message):
-    jumlah = create_invoice_link(prices)
+    jumlah = create_invoice_link(prices=prices)
     amount = jumlah.get([prices][prices])
     external_id = f'invoice-{message.chat.id}'
     payer_email = 'test@example.com'  # Atur sesuai data pengguna yang real
