@@ -128,10 +128,10 @@ def create_invoice_link(prices) -> str:
     """
     return bot.create_invoice_link(
         title='Order #1',
-        description='Pilihan mantap  👌sekarang waktunya nyiapin 🧭tunggu bentar ',
+        description='Pilihan mantap  👌sekarang waktunya pembayaran 🧭abang nyiapin makanan ',
         payload='orderID',
         provider_token=PAYMENT_PROVIDER_TOKEN,
-        currency='USD',
+        currency='IDR',
         prices=prices,
         need_name=True,
         need_phone_number=True,
