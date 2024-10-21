@@ -18,6 +18,6 @@ export function toDisplayCost(costInMinimalUnit) {
  * @returns Display cost string that may be used in the UI.
  */
 export function toDisplayCost(costInMinimalUnit) {
-    const costInRupiah = costInMinimalUnit / 0.1; // Mengonversi dari sen ke rupiah
+    const costInRupiah = costInMinimalUnit / 100; // Mengonversi dari sen ke rupiah
     return `Rp${costInRupiah.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
