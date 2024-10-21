@@ -542,7 +542,36 @@ p.small {
     color: transparent;
     opacity: .075;
 }
-  
+
+/* Common (animation effect clock icon) */
+.clock-icon {
+    animation: spin 60s linear infinite;
+    transform-origin: center; /* Agar berputar di tengah */
+}
+
+.hour-hand {
+    transform-origin: 50% 50%;
+    animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @-webkit-keyframes shimmer {
     0% {
         background-position: -100% 0;
