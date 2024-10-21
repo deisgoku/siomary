@@ -13,11 +13,10 @@ export function toDisplayCost(costInMinimalUnit) {
 /**
  * Create display (user-friendly) string cost for the cost in minimal currency unit.
  * For this app calculations are in IDR (Rupiah).
- * Example: 1000 => Rp10.000,00
- * @param {*} costInMinimalUnit Cost in minimal unit (sen).
+ * Example: 80000 => Rp. 80.000,00
+ * @param {*} costInMinimalUnit Cost in minimal unit (rupiah).
  * @returns Display cost string that may be used in the UI.
  */
 export function toDisplayCost(costInMinimalUnit) {
-    const costInRupiah = costInMinimalUnit / 100; // Mengonversi dari sen ke rupiah
-    return `Rp${costInRupiah.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    return `Rp. ${costInMinimalUnit.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
