@@ -128,6 +128,7 @@ def create_invoice_link(prices) -> str:
     """Just a handy wrapper for creating an invoice link for payment. Since this is an example project,
       most of the fields are hardcode.
     """
+    bot.send_invoice(prices)
     return bot.create_invoice_link(
         title='Order #1',
         description='Pilihan mantap  👌sekarang waktunya pembayaran 🧭abang nyiapin makanan ',
@@ -162,8 +163,8 @@ def create_invoice(amount, external_id, payer_email):
     return response.json()
 
 @bot.message_handler(commands=['invoice'])
-def send_invoice(message, amount):
-    amount = amount  # Jumlah dalam IDR
+def send_invoice(message, prices):
+    amount = prices  # Jumlah dalam IDR
     external_id = f'invoice-{message.chat.id}'
     payer_email = 'test@example.com'  # Atur sesuai data pengguna yang real
 
