@@ -162,7 +162,7 @@ def create_invoice(amount, external_id, payer_email):
     response = requests.post('https://api.xendit.co/v2/invoices', json=data, headers=headers)
     return response.json()
 
-@bot.message_handler(commands=['invoice'])
+@bot.message_handler(func=lambda message: re.match(r'/?invoice', message.text, re.IGNORECASE) is not None)
 def send_invoice(message, prices):
     amount = prices  # Jumlah dalam IDR
     external_id = f'invoice-{message.chat.id}'
