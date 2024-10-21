@@ -82,6 +82,28 @@ def handle_start_command(message):
         text='*Welcome to Siomary CAFE* 🏚 \n\n Ini waktunya memesan sesuatu yang enak enak 😋 \n\n Tekan tombol dibawah untuk memulai.'
     )
 
+@bot.message_handler(func=lambda message: re.match(r'/?invoice', message.text, re.IGNORECASE) is not None)
+def send_invoice(message):
+    jumlah = create_invoice_link(prices) # Jumlah dalam IDR
+    amount = jumlah.get('prices')
+    external_id = f'invoice-{message.chat.id}'
+    payer_email = 'test@example.com'  # Atur sesuai data pengguna yang real
+
+    invoice = create_invoice(amount, external_id, payer_email)
+    invoice_url = invoice.get("invoice_url")
+
+    if invoice_url:
+        send_actionable_message(
+            chat_id=message.chat.id,
+            text=f'Ini adalah link pembayaran menggunakan DANA , Silahkan lakukan pmebayran melalui link di bawah ini: [Bayar Sekarang]({invoice_url})',
+            parse_mode='markdown'
+        )
+    else:
+        bot.send_message(
+            chat_id=message.chat.id,
+            text='Gagal membuat invoice pembayaran, silahkan coba lagi .',
+        )
+
 @bot.message_handler()
 def handle_all_messages(message):
     """Fallback message handler that is invoced if none of above aren't match. This is a good
@@ -161,7 +183,7 @@ def create_invoice(amount, external_id, payer_email):
 
     response = requests.post('https://api.xendit.co/v2/invoices', json=data, headers=headers)
     return response.json()
-
+"""
 @bot.message_handler(func=lambda message: re.match(r'/?invoice', message.text, re.IGNORECASE) is not None)
 def send_invoice(message):
     jumlah = create_invoice_link(prices) # Jumlah dalam IDR
@@ -183,7 +205,7 @@ def send_invoice(message):
             chat_id=message.chat.id,
             text='Gagal membuat invoice pembayaran, silahkan coba lagi .',
         )
-
+"""
 
 def enable_debug_logging():
     """Display all logs from the Bot. May be useful while developing."""
