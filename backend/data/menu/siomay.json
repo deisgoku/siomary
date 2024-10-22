@@ -9,14 +9,14 @@
                 "id": "b",
                 "name": "Biasa",
                 "cost": "62500",
-                "weight": "50 pcs + Bumbu Kemasan Botol"
+                "weight": "50 pcs"
 
             },
             {
                 "id": "t",
                 "name": "Tenggiri",
                 "cost": "80000",
-                "weight": "50 Pcs + Bumbu kemasan botol"
+                "weight": "50 Pcs"
             }
         ]
     },
@@ -29,7 +29,7 @@
             {
                 "id": "s",
                 "name": "Small",
-                "cost": "2000",
+                "cost": "2500",
                 "weight": "210g"
             },
             {
@@ -59,5 +59,27 @@
                 "weight": "10 Pcs"
             }
         ]
+    },
+    {
+        "id": "siomay-4",
+        "image": "https://i.im.ge/2024/10/22/k32J5c.20241022-145841-0000.png",
+        "name": "Siomay biasa",
+        "description": "isi Siomay , dan pelengkap random sesuai stok tersedia. Apabila pelengkap habis maka akan di sajikan siomay semua",
+        "variants": [
+            {
+                "id": "s",
+                "name": "½ Porsi",
+                "cost": "5000",
+                "weight": "4 Pcs"
+            },
+            {
+                "id": "l",
+                "name": "1 Porsi",
+                "cost": "10000",
+                "weight": "8 Pcs"
+            }
+        ]
     }
+    
+
     
