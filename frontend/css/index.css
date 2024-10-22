@@ -606,14 +606,14 @@ p.small {
     box-shadow: 
         0 0 5px red, 
         0 0 10px orange,
-        0 0 15px yellow,
-        0 0 20px green,
-        0 0 2px blue,
-        0 0 3px indigo,
-        0 0 3px violet;
+        0 0 10px yellow,
+        0 0 0.1px green,
+        0 0 0.1px blue,
+        0 0 0.1px indigo,
+        0 0 0.1px violet;
     position: relative;
     animation-name: led;
-    animation: running 1s linear infinite;
+    animation: explode running 2.2s linear infinite;
 }
 
 @keyframes running {
