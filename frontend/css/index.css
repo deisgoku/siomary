@@ -635,9 +635,8 @@ p.small {
 
 body::before, body::after, body .heart {
     content: '';
-    position: absolute;
-    width: 30px; /* Ukuran hati */
-    height: 30px;
+    width: 5px; /* Ukuran hati */
+    height: 5px;
     background-color: red; /* Warna hati */
     clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 50% 100%, 0% 100%, 0% 35%);
     animation: fly-up 3s linear infinite;
