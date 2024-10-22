@@ -29,9 +29,6 @@ body {
     color-scheme: var(--tg-color-scheme);
     color: var(--text-color);
     background-color: var(--bg-color);
-    background: #f0f0f0;
-    animation: fly-up heart 2.2s ;
-    
 }
 
 h1 {
@@ -636,17 +633,32 @@ p.small {
     100% { border: 5px solid red; }
 }
 
-
-.heart {
+body::before, body::after, body .heart {
+    content: '';
     position: absolute;
     width: 30px; /* Ukuran hati */
     height: 30px;
-    background-color: red;
+    background-color: red; /* Warna hati */
     clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 50% 100%, 0% 100%, 0% 35%);
     animation: fly-up 3s linear infinite;
 }
+
+body::before {
+    left: 20%;
+    animation-delay: 0s;
 }
 
+body::after {
+    left: 40%;
+    animation-delay: 1s;
+}
+
+body .heart {
+    left: 60%;
+    animation-delay: 2s;
+}
+
+/* Animasi untuk hati */
 @keyframes fly-up {
     0% {
         transform: translateY(100%);
@@ -657,6 +669,3 @@ p.small {
         opacity: 0;
     }
 }
-
-
-
