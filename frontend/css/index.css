@@ -172,7 +172,7 @@ p.small {
         0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
         0 3.5px 6px hsla(230, 13%, 9%, 0.09);
     padding: 24px;
-    animation: led 5s infinite alternate, linear infinite;
+    animation: led 3s infinite alternate, linear infinite;
 }
 
 .cafe-kitchen-categories {
@@ -602,16 +602,14 @@ p.small {
     }
 }
 .led {
-   /* font-size: 50px; */
-    color: transparent; /* Sembunyikan teks */
     box-shadow: 
         0 0 5px red, 
         0 0 10px orange,
         0 0 15px yellow,
         0 0 20px green,
-        0 0 25px blue,
-        0 0 30px indigo,
-        0 0 35px violet;
+        0 0 2px blue,
+        0 0 3px indigo,
+        0 0 3px violet;
     position: relative;
     animation-name: led;
     animation: running 3s linear infinite;
