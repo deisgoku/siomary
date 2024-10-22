@@ -41,43 +41,23 @@
         ]
     },
     {
-        "id": "burger-3",
-        "image": "https://images.unsplash.com/photo-1610970878459-a0e464d7592b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Pulled pork smoked knee burger",
-        "description": "Pulled smoked pork knuckle braised with black beer and thyme, homemade BBQ sauce, spicy cabbage salad, romaine lettuce and Cheddar cheese.",
+        "id": "siomay-3",
+        "image": "https://i.im.ge/2024/10/22/k32J5c.20241022-145841-0000.png",
+        "name": "Siomay Ikan Tenggiri",
+        "description": "isi Siomay , dan pelengkap random sesuai stok tersedia. Apabila pelengkap habis maka akan di sajikan siomay semua",
         "variants": [
             {
                 "id": "s",
-                "name": "Small",
-                "cost": "1299",
-                "weight": "254g"
+                "name": "½ Porsi",
+                "cost": "10000",
+                "weight": "5 Pcs"
             },
             {
                 "id": "l",
-                "name": "Large",
-                "cost": "1470",
-                "weight": "370g"
-            }
-        ]
-    },
-    {
-        "id": "burger-4",
-        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Chiken burger",
-        "description": "Grilled chicken breast with crispy bacon, Cheddar cheese, arugula, beetroot leaves, pickles and spicy homemade mayonnaise.",
-        "variants": [
-            {
-                "id": "s",
-                "name": "Small",
-                "cost": "1390",
-                "weight": "320g"
-            },
-            {
-                "id": "l",
-                "name": "Large",
-                "cost": "1580",
-                "weight": "500g"
+                "name": "1 Porsi",
+                "cost": "20000",
+                "weight": "10 Pcs"
             }
         ]
     }
-]
+    
