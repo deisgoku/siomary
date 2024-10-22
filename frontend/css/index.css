@@ -30,9 +30,8 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     background: #f0f0f0;
-    animation: heart;
-    position: relative;
-    overflow: hidden;
+    animation: fly-up heart 2.2s ;
+    
 }
 
 h1 {
