@@ -172,7 +172,7 @@ p.small {
         0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
         0 3.5px 6px hsla(230, 13%, 9%, 0.09);
     padding: 24px;
-    animation: led 5s infinite alternate, linear infinite;
+    animation: led fireworks 5s infinite alternate, linear infinite;
 }
 
 .cafe-kitchen-categories {
@@ -613,6 +613,7 @@ p.small {
         0 0 30px indigo,
         0 0 35px violet;
     position: absolute;
+    animation-name: led;
     animation: running 3s linear infinite;
 }
 
@@ -637,6 +638,7 @@ p.small {
     height: 20px;
     background-color: #ff0; /* Warna kembang api */
     border-radius: 50%;
+    animation-name: fireworks;
     animation: explode 1s infinite;
 }
 
