@@ -612,8 +612,9 @@ p.small {
         0 0 0.1px indigo,
         0 0 0.1px violet;
     position: relative;
-    animation-name: led;
-    animation: explode running 2.2s linear infinite;
+    animation-name: led
+    animation-fill-mode: forwards;
+    animation: running-border 2.2s linear infinite;
 }
 
 @keyframes running {
@@ -638,26 +639,19 @@ p.small {
     background-color: #ff0; /* Warna kembang api */
     border-radius: 50%;
     animation-name: fireworks;
-    animation: explode 1s infinite;
+    animation: running 1s infinite;
 }
 
-@keyframes explode {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(2);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(0);
-        opacity: 0;
-    }
+@keyframes running-border {
+    0% { border: 5px solid red; }
+    25% { border: 5px solid yellow; }
+    50% { border: 5px solid green; }
+    75% { border: 5px solid blue; }
+    100% { border: 5px solid red; }
 }
 
-/* Animasi posisi kembang api */
-@keyframes fireworksAnimation {
-    0% { top: 50%; left: 50%; }
-    100% { top: -20%; left: 100%; }
+.box {
+    width: 100px;
+    height: 100px;
+    animation: running-border 2s linear infinite;
 }
