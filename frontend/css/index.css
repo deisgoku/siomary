@@ -607,7 +607,7 @@ p.small {
     position: relative;
     animation-name: led
     animation-fill-mode: forwards;
-    animation: running-border 2.2s linear infinite;
+    animation: running-border 5.5s linear infinite;
 }
 
 @keyframes running {
