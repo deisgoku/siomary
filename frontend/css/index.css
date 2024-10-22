@@ -633,38 +633,3 @@ p.small {
     100% { border: 5px solid red; }
 }
 
-body::before, body::after, body .heart {
-    content: '';
-    width: 5px; /* Ukuran hati */
-    height: 5px;
-    background-color: red; /* Warna hati */
-    clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 50% 100%, 0% 100%, 0% 35%);
-    animation: fly-up 3s linear infinite;
-}
-
-body::before {
-    left: 20%;
-    animation-delay: 0s;
-}
-
-body::after {
-    left: 40%;
-    animation-delay: 1s;
-}
-
-body .heart {
-    left: 60%;
-    animation-delay: 2s;
-}
-
-/* Animasi untuk hati */
-@keyframes fly-up {
-    0% {
-        transform: translateY(100%);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
