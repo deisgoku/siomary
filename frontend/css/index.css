@@ -31,6 +31,8 @@ body {
     background-color: var(--bg-color);
     background: #f0f0f0;
     animation: heart;
+    position: relative;
+    overflow: hidden;
 }
 
 h1 {
