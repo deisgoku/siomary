@@ -6,16 +6,10 @@
         "backgroundColor": "https://i.im.ge/2024/10/22/k32J5c.20241022-145841-0000.png"
     },
     {
-        "id": "pizza",
-        "icon": "icons/icon-pizza.svg",
-        "name": "Pizza",
-        "backgroundColor": "#F5DEB3"
-    },
-    {
-        "id": "pasta",
-        "icon": "icons/icon-pasta.svg",
-        "name": "Pasta",
-        "backgroundColor": "#8FBC8F"
+        "id": "coffee",
+        "icon": "icons/icon-coffee.svg",
+        "name": "Coffee",
+        "backgroundColor": "#D2B48C"
     },
     {
         "id": "ice-cream",
@@ -24,9 +18,15 @@
         "backgroundColor": "#E6E6FA"
     },
     {
-        "id": "coffee",
-        "icon": "icons/icon-coffee.svg",
-        "name": "Coffee",
-        "backgroundColor": "#D2B48C"
+        "id": "pasta",
+        "icon": "icons/icon-pasta.svg",
+        "name": "Pasta",
+        "backgroundColor": "#8FBC8F"
+    },
+    {
+        "id": "pizza",
+        "icon": "icons/icon-pizza.svg",
+        "name": "Pizza",
+        "backgroundColor": "#F5DEB3"
     }
 ]
