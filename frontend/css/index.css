@@ -612,7 +612,7 @@ p.small {
         0 0 3px violet;
     position: relative;
     animation-name: led;
-    animation: running 3s linear infinite;
+    animation: running 1s linear infinite;
 }
 
 @keyframes running {
