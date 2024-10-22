@@ -42,7 +42,7 @@
     },
     {
         "id": "siomay-3",
-        "image": "https://i.im.ge/2024/10/22/k32J5c.20241022-145841-0000.png",
+        "image": "https://i.im.ge/2024/10/22/k3sTdf.siomay-bang-dedi.jpeg",
         "name": "Siomay Ikan Tenggiri",
         "description": "isi Siomay , dan pelengkap random sesuai stok tersedia. Apabila pelengkap habis maka akan di sajikan siomay semua",
         "variants": [
@@ -62,21 +62,21 @@
     },
     {
         "id": "siomay-4",
-        "image": "https://i.im.ge/2024/10/22/k32J5c.20241022-145841-0000.png",
+        "image": "https://i.im.ge/2024/10/22/k3sTdf.siomay-bang-dedi.jpeg",
         "name": "Siomay biasa",
         "description": "isi Siomay , dan pelengkap random sesuai stok tersedia. Apabila pelengkap habis maka akan di sajikan siomay semua",
         "variants": [
             {
                 "id": "s",
                 "name": "½ Porsi",
-                "cost": "5000",
-                "weight": "4 Pcs"
+                "cost": "7500",
+                "weight": "5 Pcs"
             },
             {
                 "id": "l",
                 "name": "1 Porsi",
-                "cost": "10000",
-                "weight": "8 Pcs"
+                "cost": "15000",
+                "weight": "10 Pcs"
             }
         ]
     }
