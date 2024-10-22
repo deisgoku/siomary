@@ -603,14 +603,7 @@ p.small {
     }
 }
 .led {
-    box-shadow: 
-        0 0 5px red, 
-        0 0 10px orange,
-        0 0 10px yellow,
-        0 0 0.1px green,
-        0 0 0.1px blue,
-        0 0 0.1px indigo,
-        0 0 0.1px violet;
+    border: 5px solid red;
     position: relative;
     animation-name: led
     animation-fill-mode: forwards;
