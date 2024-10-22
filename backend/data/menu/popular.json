@@ -21,48 +21,48 @@
         ]
     },
     {
-        "id": "pizza-1",
-        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Bianca Fresca",
-        "description": "White pizza with garlic infused olive oil, goat cheese, fresh mozzarella fior di latte, prosciutto fired off then topped with arugula and shaved parmesan.",
+        "id": "siomay-3",
+        "image": "https://i.im.ge/2024/10/22/k32J5c.20241022-145841-0000.png",
+        "name": "Siomay Ikan Tenggiri ",
+        "description": "Siomay yang di buat dengan ikan tenggiri penuh berbahan premium",
         "variants": [
             {
-                "id": "s",
-                "name": "Small",
-                "cost": "1479",
-                "weight": "410g"
+                "id": "p",
+                "name": "1 pcs",
+                "cost": "2000",
+                "weight": "210g"
             },
             {
                 "id": "m",
-                "name": "Medium",
-                "cost": "1699",
-                "weight": "600g"
+                "name": "½ Porsi",
+                "cost": "10000",
+                "weight": "5 Pcs"
             },
             {
                 "id": "l",
-                "name": "Large",
-                "cost": "1799",
-                "weight": "800g"
+                "name": "1 Porsi",
+                "cost": "20000",
+                "weight": "10 Pcs"
             }
         ]
     },
     {
         "id": "pasta-1",
         "image": "https://images.unsplash.com/photo-1516685018646-549198525c1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Spaghetti alla Carbonara",
+        "name": "Seblak",
         "description": "Spaghetti in a creamy sauce made with egg, prosciutto, sautéed onions, Parmesan cheese and black pepper.",
         "variants": [
             {
-                "id": "n",
-                "name": "Normal",
-                "cost": "1109",
-                "weight": "300g"
+                "id": "s",
+                "name": "Sedang",
+                "cost": "7500",
+                "weight": "½ Porsi"
             },
             {
-                "id": "g",
-                "name": "Gluten Free",
-                "cost": "1290",
-                "weight": "300g"
+                "id": "p",
+                "name": "Penuh",
+                "cost": "15000",
+                "weight": "1 Porsi"
             }
         ]
     }
