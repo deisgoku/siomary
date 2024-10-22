@@ -602,9 +602,9 @@ p.small {
     }
 }
 .led {
-    font-size: 50px;
+   /* font-size: 50px; */
     color: transparent; /* Sembunyikan teks */
-    text-shadow: 
+    box-shadow: 
         0 0 5px red, 
         0 0 10px orange,
         0 0 15px yellow,
