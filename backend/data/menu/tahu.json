@@ -1,0 +1,28 @@
+[
+    {
+        "id": "tahu_crispy-1",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
+        "name": "Tahu Krispy",
+        "description": "Tahu yang renyah nikmat tiada tara cocok teman cemilan.",
+        "variants": [
+            {
+                "id": "s",
+                "name": "Satuan",
+                "cost": "2000",
+                "weight": "3pcs"
+            },
+            {
+                "id": "m",
+                "name": "isi 8 pcs",
+                "cost": "5000",
+                "weight": "8pcs"
+            },
+            {
+                "id": "l",
+                "name": "isi 16 pcs",
+                "cost": "10000",
+                "weight": "16pcs"
+            }
+        ]
+    }
+]
