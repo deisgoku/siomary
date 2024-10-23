@@ -633,13 +633,6 @@ p.small {
     100% { border: 5px solid red; }
 }
 
-body {
-    position: relative;
-    height: 100vh;
-    background-color: #f0f8ff; /* Ganti warna background sesuai keinginan */
-    overflow: hidden;
-}
-
 .heart {
     position: absolute;
     width: 50px; /* Ukuran hati */
