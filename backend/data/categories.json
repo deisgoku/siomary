@@ -12,8 +12,8 @@
         "backgroundColor": "#D2B48C"
     },
     {
-        "id": "jus-buah",
-        "icon": "icons/jus-buah.svg",
+        "id": "jus_buah",
+        "icon": "icons/jus_buah.svg",
         "name": "Jus Buah",
         "backgroundColor": "#E6E6FA"
     },
