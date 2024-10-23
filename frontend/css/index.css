@@ -547,7 +547,7 @@ p.small {
 
 /* Common (animation effect clock icon) */
 .clock-icon {
-    animation: spin 0.3s linear infinite;
+    animation: spin 1s linear infinite;
     animation-name: clock-icon;
     transform-origin: center; /* Agar berputar di tengah */
 }
@@ -555,7 +555,7 @@ p.small {
 .hour-hand {
     transform-origin: 50% 50%;
     animation-name: hour-hand;
-    animation: rotate 0.3s linear infinite;
+    animation: rotate 1s linear infinite;
 }
 
 @keyframes rotate {
