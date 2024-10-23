@@ -69,7 +69,7 @@ export class DetailsPage extends Route {
         $('#cafe-item-details-quantity-increase-button').clickWithRipple(() => this.#increaseQuantity());
 
         TelegramSDK.showMainButton(
-            'ADD TO CART',
+            'Tambahkan Ke Keranjang',
             () => {
                 Cart.addItem(menuItem, this.#selectedVariant, this.#selectedQuantity);
                 this.#showSuccessSnackbar();
