@@ -633,16 +633,3 @@ p.small {
     100% { border: 5px solid red; }
 }
 
-.heart {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Bentuk hati */
-    opacity: 0.7;
-    animation: float 5s infinite; /* Durasi animasi */
-    z-index: -1; /* Pastikan di bawah elemen lainnya */
-}
-
-/* Animasi mengapung hati */
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
-}
