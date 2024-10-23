@@ -7,20 +7,20 @@
     },
     {
         "id": "coffee",
-        "icon": "icons/icon-coffee.svg",
-        "name": "Coffee",
+        "icon": "icons/kopi.svg",
+        "name": "Kopi",
         "backgroundColor": "#D2B48C"
     },
     {
-        "id": "ice-cream",
-        "icon": "icons/icon-icecream.svg",
-        "name": "Ice Cream",
+        "id": "jus-buah",
+        "icon": "icons/jus-buah.svg",
+        "name": "Jus Buah",
         "backgroundColor": "#E6E6FA"
     },
     {
-        "id": "pasta",
-        "icon": "icons/icon-pasta.svg",
-        "name": "Pasta",
+        "id": "sop_buah",
+        "icon": "icons/sop_buah.svg",
+        "name": "Soup Buah",
         "backgroundColor": "#8FBC8F"
     },
     {
