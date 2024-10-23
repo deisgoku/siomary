@@ -1,81 +1,81 @@
 [
     {
-        "id": "ice-cream-1",
+        "id": "jus_buah-1",
         "image": "https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Black Cherry",
-        "description": "Black cherry ice cream with whole black cherries.",
+        "name": "Jus Mangga",
+        "description": "Jus Mangga dengan lumuran susu yang nikmat.",
         "variants": [
             {
                 "id": "n",
                 "name": "Normal",
-                "cost": "540",
-                "weight": "90g"
+                "cost": "10000",
+                "weight": "600ml"
             }
         ]
     },
     {
-        "id": "ice-cream-2",
-        "image": "https://images.unsplash.com/photo-1629385697093-57be2cc97fa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Raspberry cheesecake chunk",
-        "description": "Cheesecake ice cream with raspberry ripple and cheesecake chunks.",
+        "id": "jus_buah-2",
+        "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjgxNTN8MHwxfGFsbHx8fHx8fHx8fDE3Mjk3MTA4MDB8&ixlib=rb-4.0.3&q=80&w=1080auto=format&fit=center&w=1920&q=80",
+        "name": "jus Jeruk",
+        "description": "Jus Jeruk manis dengan kesegaran alami buah.",
         "variants": [
             {
                 "id": "s",
-                "name": "One scoop",
-                "cost": "540",
-                "weight": "90g"
+                "name": "Sunkis",
+                "cost": "8000",
+                "weight": "600ml"
             },
             {
                 "id": "m",
-                "name": "Two scoop",
-                "cost": "714",
-                "weight": "180g"
+                "name": "Jeruk Mandarin",
+                "cost": "10000,
+                "weight": "600ml
             },
             {
                 "id": "l",
-                "name": "Three scoop",
-                "cost": "834",
-                "weight": "270g"
+                "name": "Jeruk nipis",
+                "cost": "6000",
+                "weight": "600ml"
             }
         ]
     },
     {
-        "id": "ice-cream-3",
-        "image": "https://images.unsplash.com/photo-1514910539021-85477c9cdcf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Chocoholic peanut butter ripple",
-        "description": "Deep, dark chocolate ice cream with Reese's Peanut Butter ripple.",
+        "id": "jus_buah-3",
+        "image": "https://plus.unsplash.com/premium_photo-1700162641939-0b8ada36710c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjgxNTN8MHwxfGFsbHx8fHx8fHx8fDE3Mjk3MTExODl8&ixlib=rb-4.0.3&q=80&w=1080auto=format&fit=center&w=1920&q=80",
+        "name": "Jus Alpukat",
+        "description": "Jus Alpukat yang kental dan manis di taburi susu coklat yang nikmat",
         "variants": [
             {
                 "id": "n",
                 "name": "Normal",
-                "cost": "540",
-                "weight": "90g"
+                "cost": "15000",
+                "weight": "600ml"
             }
         ]
     },
     {
-        "id": "ice-cream-4",
-        "image": "https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Dulce De Leche",
-        "description": "Caramel ice cream with caramel ripple.",
+        "id": "jus_buah-4",
+        "image": "https://images.unsplash.com/photo-1592083809134-edd367f82340?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjgxNTN8MHwxfGFsbHx8fHx8fHx8fDE3Mjk3MTE0MDB8&ixlib=rb-4.0.3&q=80&w=1080uto=format&fit=center&w=1920&q=80",
+        "name": "Jus Buah Naga ",
+        "description": "Jus Buah Naga Ungu yang nikmat demgan kental susu di dalamnya.",
         "variants": [
             {
                 "id": "s",
-                "name": "One scoop",
-                "cost": "540",
-                "weight": "90g"
+                "name": "Normal",
+                "cost": "12000",
+                "weight": "600ml"
             },
             {
                 "id": "m",
-                "name": "Two scoop",
-                "cost": "714",
-                "weight": "180g"
+                "name": "Cup Kecil",
+                "cost": "6000",
+                "weight": "300ml"
             },
             {
                 "id": "l",
-                "name": "Three scoop",
-                "cost": "834",
-                "weight": "270g"
+                "name": "Cup Besar",
+                "cost": "12000",
+                "weight": "600ml"
             }
         ]
     }
