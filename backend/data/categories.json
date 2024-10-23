@@ -24,9 +24,9 @@
         "backgroundColor": "#8FBC8F"
     },
     {
-        "id": "pizza",
+        "id": "tahu",
         "icon": "icons/icon-pizza.svg",
-        "name": "Pizza",
+        "name": "Tahu",
         "backgroundColor": "#F5DEB3"
     }
 ]
