@@ -634,10 +634,6 @@ p.small {
 }
 
 .heart {
-    position: absolute;
-    width: 50px; /* Ukuran hati */
-    height: 50px;
-    background-color: red; /* Warna hati */
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Bentuk hati */
     opacity: 0.7;
     animation: float 5s infinite; /* Durasi animasi */
