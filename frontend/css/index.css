@@ -626,10 +626,10 @@ p.small {
 }
 
 @keyframes running-border {
-    0% { border: 5px solid red; }
-    25% { border: 5px solid yellow; }
-    50% { border: 5px solid green; }
-    75% { border: 5px solid blue; }
-    100% { border: 5px solid red; }
+    0% { border: 2.5px solid red; }
+    25% { border: 2.5px solid yellow; }
+    50% { border: 2.5px solid green; }
+    75% { border: 2.5px solid blue; }
+    100% { border: 2.5px solid red; }
 }
 
