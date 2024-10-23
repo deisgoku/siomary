@@ -1,9 +1,9 @@
 [
     {
         "id": "siomay",
-        "icon": "https://i.im.ge/2024/10/22/k32J5c.20241022-145841-0000.png",
+        "icon": "icons/icon-siomay.svg",
         "name": "Siomay",
-        "backgroundColor": "https://i.im.ge/2024/10/22/k32J5c.20241022-145841-0000.png"
+        "backgroundColor": "#E6E6FA"
     },
     {
         "id": "coffee",
