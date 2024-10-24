@@ -160,7 +160,7 @@ def create_invoice_link(prices) -> str:
 #    bot.send_invoice(amount)
     return bot.create_invoice_link(
         title='Order #1',
-        description='Pilihan mantap  👌sekarang waktunya pembayaran 🧭abang nyiapin makanan ',
+        description='🗨️ Dikarenakan platfrom telegram tidak mendukung pembayaran mata uang rupiah, \nAplikasi ini hanyalah simulasi yang akan Bang Dedi perkembangkan di masa depan sembari melayani pelanggan secara nyata di lokasi . \nTerimakasih telah berjelajah , melihat-lihat menu yang Bang Dedi sediakan .\n\nInfo lebih lanjut silahkan hubungi :0821-9222-1584',
         payload='orderID',
         provider_token=PAYMENT_PROVIDER_TOKEN,
         currency='USD',
