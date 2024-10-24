@@ -47,22 +47,28 @@
         ]
     },
     {
-        "id": "pasta-1",
-        "image": "https://images.unsplash.com/photo-1516685018646-549198525c1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=center&w=1920&q=80",
-        "name": "Seblak",
-        "description": "Spaghetti in a creamy sauce made with egg, prosciutto, sautéed onions, Parmesan cheese and black pepper.",
+        "id": "tahu_crispy-1",
+        "image": "https://images.unsplash.com/photo-1729713037174-9dacae0f405d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjgxNTN8MHwxfGFsbHx8fHx8fHx8fDE3Mjk3MTMwODR8&ixlib=rb-4.0.3&q=80&w=1080auto=format&fit=center&w=1920&q=80",
+        "name": "Tahu Krispy",
+        "description": "Tahu yang renyah nikmat tiada tara cocok teman cemilan.",
         "variants": [
             {
                 "id": "s",
-                "name": "Sedang",
-                "cost": "7500",
-                "weight": "½ Porsi"
+                "name": "Satuan",
+                "cost": "2000",
+                "weight": "3pcs"
             },
             {
-                "id": "p",
-                "name": "Penuh",
-                "cost": "15000",
-                "weight": "1 Porsi"
+                "id": "m",
+                "name": "isi 8 pcs",
+                "cost": "5000",
+                "weight": "8pcs"
+            },
+            {
+                "id": "l",
+                "name": "isi 16 pcs",
+                "cost": "10000",
+                "weight": "16pcs"
             }
         ]
     }
