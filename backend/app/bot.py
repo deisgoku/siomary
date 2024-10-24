@@ -160,7 +160,7 @@ def create_invoice_link(prices) -> str:
 #    bot.send_invoice(amount)
     return bot.create_invoice_link(
         title='Order #1',
-        description='🗨️ Dikarenakan platfrom telegram tidak mendukung pembayaran mata uang rupiah, Aplikasi ini hanyalah simulasi. \nInfo lebih lanjut silahkan hubungi :0821-9222-1584',
+        description='🗨️ Dikarenakan platfrom telegram tidak mendukung pembayaran mata uang rupiah, Info lebih lanjut silahkan hubungi: \n*WhatsApp : 0821-9222-1584*',
         payload='orderID',
         provider_token=PAYMENT_PROVIDER_TOKEN,
         currency='USD',
